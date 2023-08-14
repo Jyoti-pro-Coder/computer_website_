@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+        padding: 0px;
+        margin: 0px;
+    }
+header{
+    z-index: 1;
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: right;
+        padding: 15px 200px;
+        transition: 0.5s ease;
+        position: fixed;
+        box-shadow: 5px 5px 12px black;
+        background-color: white;
+}
+header ul{
+display: flex;
+margin-left: 540px;
+
+}
+header ul li{
+padding-left: 13px;
+list-style: none;
+margin: 10px;
+cursor: pointer;
+}
+header h1{
+    font-size: 24px;
+    margin-top: 7px;
+    margin-left: -100px;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+header button{
+    padding: 5px 9px;
+    font-size: 16px;
+    background-color: white;
+    color:purple;
+    border:2px solid black;
+    cursor: pointer;
+}
+#courselist{
+    position: relative;
+    z-index: -1;
+    height: 130vh;
+}
+ h1{
+    margin-top: 100px;
+    font-size: 40px;
+}
+.list1{
+    margin: 5px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  margin-top: 40px;
+  width: 350px;
+  height: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  background-color: azure;
+  position: relative;
+  cursor: pointer;
+  
+}
+.list1 img{
+    height: 220px;
+    width: 350px;
+}
+.courselist-item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.list1 .price{
+    height: 68px;
+    width: 68px;
+    background-color:navy;
+    color: white;
+    font-size: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 185px;
+    left: 286px;
+}
+.list1-text{
+    margin-left: 10px;
+}
+.list1-text p , h5{
+    color:gray;
+    font-size: 15px;
+}
+.list1-text h5{
+    display: flex;
+    font-size: 20px;
+}
+.list1-text i{
+    font-size: 20px;
+   
+}
+.price p{
+margin-top:23px;
+margin-left: 12px;
+color: white;
+}
+/* .list1 p{
+    color: gray;
+} */
+.list1 h3{
+    font-size: 22px;
+}
+
+.active {
+    color: yellow;
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Study with JP Education</h1>
+ <ul>
+ <li><a href="homepage.html">Home</a></li>
+ <li><a href="aboutpage.html">About</a></li>
+ <li><a href="blogpage.html">Blog</a></li>
+ <li><a class="active" href="coursepage.html">Courses</a></li>
+ <li><a  href="contactpage.html">Contact</a></li>
+ <li><button>Join For Free</button></li>
+ </ul>
+ </header>
+    
+        <center><h1>Our Popular Courses</h1><br>
+        <p>Replenish man have thing gathering lights yielding shall you</p></center>
+        <div class="courselist-item">
+        
+         <div class="list1">
+            <a href="course1_java.html">
+         <img src="img_vs_code/java.jpg" alt="java image">
+        <div class="list1-text">
+          <p>Updated 17/07/2023</p>  
+          <h3>JavaScript Beginners Course</h3>
+          <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+        </a></div>
+        <div class="price"><p>$49.99</p></div>
+        </div>
+        
+        <div class="list1">
+            <a href="course1_html.html">
+         <img src="img_vs_code/html.jpg" alt="java image">
+         <div class="list1-text">
+         <p>Updated 17/07/2023</p>  
+         <h3>HTML & CSS Beginners Course</h3>
+         <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+         </a>
+        </div>
+        <div class="price"><p>$49.99</p></div>
+        </div>
+        
+        <div class="list1">
+            <a href="course1_css.html">
+         <img src="img_vs_code/css.jpg" alt="java image">
+         <div class="list1-text">
+         <p>Updated 17/07/2023</p>  
+         <h3>CSS Beginners Course</h3>
+         <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(278)</h5>
+         </a>
+        </div>
+        <div class="price"><p>$49.99</p></div>
+        </div>
+
+        <div class="list1">
+            <a href="course1_webdesign.html">
+            <img src="img_vs_code/webdesign.jpg" alt="java image">
+            <div class="list1-text">
+            <p>Updated 17/07/2023</p>  
+            <h3>Web Design Crash Course</h3>
+            <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+            </a>
+           </div>
+           <div class="price"><p>$49.99</p></div>
+        </div>
+        </div>
+        
+        
+        <div class="list1">
+            <a href="course1_webdevelopment.html">
+            <img src="img_vs_code/webdevelopment.jpg" alt="java image">
+            <div class="list1-text">
+            <p>Updated 17/07/2023</p>  
+            <h3>Web Development Crash  Course</h3>
+            <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+        </a>
+           </div>
+           <div class="price"><p>$49.99</p></div>
+        </div>
+        </div>
+
+        <div class="list1">
+            <img src="img_vs_code/ui.png" alt="java image">
+            <div class="list1-text">
+            <p>Updated 17/07/2023</p>  
+            <h3>UI Development Beginners Course</h3>
+            <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+        
+           </div>
+           <div class="price"><p>$49.99</p></div>
+        </div>
+        </div>
+        </div>
+      
+        
+</body>
+</html>

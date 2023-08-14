@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/brands.min.css" integrity="sha512-3BTr+iUuxM3Z4P63cndpLNAIj4MjOQlWU67+g60wxnxBW1E6r/BZYOZdFXxdHY2OCFX2sG1hnFAuMQnyBnHR6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/brands.min.css" integrity="sha512-3BTr+iUuxM3Z4P63cndpLNAIj4MjOQlWU67+g60wxnxBW1E6r/BZYOZdFXxdHY2OCFX2sG1hnFAuMQnyBnHR6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+header{
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: right;
+        padding: 15px 200px;
+        transition: 0.5s ease;
+        position: fixed;
+        box-shadow: 5px 5px 12px black;
+        background-color: white;
+        z-index: 1;
+}
+header ul{
+display: flex;
+margin-left: 540px;
+
+}
+header ul li{
+padding-left: 13px;
+list-style: none;
+margin: 10px;
+cursor: pointer;
+}
+header h1{
+    font-size: 24px;
+    margin-top: 7px;
+    margin-left: -100px;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+header button{
+    padding: 5px 9px;
+    font-size: 16px;
+    background-color: white;
+    color:purple;
+    border:2px solid black;
+    cursor: pointer;
+}
+
+.container{
+    position: relative;
+    top: -30px;
+    height: 100vh;
+    width: 100vw;
+    
+   
+    
+}
+.container img{
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.container h1{
+    /* position: absolute;
+    top: 180px; */
+    margin-top: -500px;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.container p{
+    margin-top: 30px;
+width: 740px;
+font-size: 20px;
+    color: white;
+    margin-left: 380px;
+    
+    z-index: 1;
+}
+.btn1 , .btn2{
+    padding: 8px 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.btn1{
+    background-color: blue;
+    color: white;
+}
+.btn2{
+    background-color: white;
+    color: blue;
+}
+.btn1:hover{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: blue;
+    color: white;
+}
+@media (max-width:769px) {
+    header h1{
+        width: 200px;
+        margin-left: -180px;
+        display: none;
+    }
+    header{
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        height: 40px;
+        transition: 0.5s ease;
+        position: fixed;
+        box-shadow: 5px 5px 12px black;
+        background-color: white;
+}
+header ul{
+display: flex;
+margin-left: -200px;
+
+
+}
+header ul li{
+padding: 4px;
+list-style: none;
+font-size: 10px;
+cursor: pointer;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+.container{
+    position: relative;
+    top: -30px;
+    height: 55vh;
+    width: 36%;
+   z-index: -1;
+    
+}
+.container img{
+    background-size: cover;
+    width: 54vw;
+    height: 55vh;
+}
+.container h1{
+  
+    width: 290px;
+position: absolute;
+margin-top: -380px;
+left: 80px;
+    color:white;
+    font-size: 20px;
+ 
+    z-index: 1;
+}
+.container p{
+    margin-top: -300px;
+width: 240px;
+font-size: 10px;
+font-size: 20px;
+    color: white;
+    margin-left: 80px;
+    
+    z-index: 1;
+}
+.btn1{
+    padding: 3px 6px;
+    font-size: 15px;
+    border: none;
+    margin-left: -260px;
+    cursor: pointer;
+}
+.btn2{
+    padding: 3px 6px;
+    font-size: 15px;
+    border: none;
+    margin-right: -390px;
+    cursor: pointer;
+}
+.feacture{
+    height: 100vh;
+    width: 53%;
+    overflow: hidden;
+    z-index: -1;
+}
+.feacture h2{
+    font-size:10px
+}
+.feacture p , #courselist p{
+    font-size: 10px;
+}
+.feacture-main{
+    margin-left: 20px;
+    margin-right: 20px;
+    display:none;
+}
+.feacture1{
+    padding: 14px;
+    background-color:lavender;
+    width: 500px;
+    height: 300px;
+}
+.feacture1 h3{
+    font-size: 15px;
+    margin-top: 20px;
+   
+}
+.feacture1 i{
+    margin-top: 10px;
+    font-size: 40px;
+}
+.feacture1 p{
+    color: dimgray;
+}
+}
+
+
+.feacture{
+    margin-top: 4px;
+    height: 80vh;
+}
+.feacture h2 , #courselist h1{
+    font-size:3.1em;
+}
+.feacture p , #courselist p{
+    font-size: 1.3em;
+}
+.feacture-main{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.feacture1{
+    padding: 14px;
+    background-color:#f7f7f7;
+    width: 400px;
+    height: 200px;
+}
+.feacture1 h3{
+    font-size: 25px;
+    margin-top: 20px;
+   
+}
+.feacture1 i{
+    margin-top: 10px;
+    font-size: 40px;
+}
+.feacture1 p{
+    color: dimgray;
+}
+#courselist{
+    position: relative;
+ height: 130vh;
+
+}
+.list1{
+    margin: 5px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  margin-top: 40px;
+  width: 350px;
+  height: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  background-color: azure;
+  position: relative;
+  cursor: pointer;
+  
+}
+.list1 img{
+    height: 220px;
+    width: 350px;
+}
+.courselist-item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.list1 .price{
+    height: 68px;
+    width: 68px;
+    background-color:navy;
+    color: white;
+    font-size: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 185px;
+    left: 286px;
+}
+.list1-text{
+    margin-left: 10px;
+}
+.list1-text p , h5{
+    color:gray;
+    font-size: 15px;
+}
+.list1-text h5{
+    display: flex;
+    font-size: 20px;
+}
+.list1-text i{
+    font-size: 20px;
+   
+}
+.price p{
+margin-top:21px;
+margin-left: 6px;
+color: white;
+}
+/* .list1 p{
+    color: gray;
+} */
+.list1 h3{
+    font-size: 22px;
+}
+.registration{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url("img_vs_code/webdevelopment.jpg"); */
+    background-image: url("img_vs_code/code2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    
+}
+.list2{
+    margin: 5px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  margin-top: -400px;
+  width: 350px;
+  height: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1040px;
+  background-color: azure;
+  position: relative;
+  cursor: pointer;
+  
+}
+.list2 img{
+    height: 220px;
+    width: 350px;
+}
+.courselist-item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.list2 .price{
+    height: 68px;
+    width: 68px;
+    background-color:navy;
+    color: white;
+    font-size: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 185px;
+    left: 286px;
+}
+.list2-text{
+    margin-left: 10px;
+}
+.list2-text p , h5{
+    color:gray;
+    font-size: 15px;
+}
+.list2-text h5{
+    display: flex;
+    font-size: 20px;
+}
+.list2-text i{
+    font-size: 20px;
+   
+}
+.price p{
+margin-top:21px;
+margin-left: 6px;
+color: white;
+}
+/* .list1 p{
+    color: gray;
+} */
+.list2 h3{
+    font-size: 22px;
+}
+.timer{
+    color: white;
+    height: 200px;
+    width: 500px;
+    font-size: 40px;
+display: flex;
+justify-content:space-between;
+
+}
+
+.register-info{
+    color: white;
+   position: absolute;
+   top: 200px;
+   left: 150px;
+}
+.register-info h1{
+    font-size: 60px;
+}
+.register-info h4{
+    font-size: 20px;
+}
+.register-info  h2{
+    font-size: 50px;
+}
+.sec , .hours , .mins , .days{
+    padding-top: 33px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+  height: 100px;
+  display: block;
+  justify-content: space-evenly;
+  border-radius: 25px;
+  }
+  .registration-form{
+position: absolute;
+top: 150px;
+right: 100px;
+background-color: white;
+height: 430px;
+width: 500px;
+ }
+ .registration-form input{
+    height: 45px;
+    width: 70%;
+    margin-left: 70px;
+    margin-top: 28px;
+    font-size: 17px;
+    border: 1px solid navy;
+ }
+ #btn1{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color:navy;
+    font-weight: 700;
+    word-spacing: 5px;
+    color:white;
+    padding-right: 10px;
+    padding-left: 10px;
+ }
+ .community{
+    height: 100vh;
+     }
+ .community-group{
+ display: flex;
+ justify-content: space-around;
+ 
+}
+.community h1{
+    font-size: 60px;
+}
+ .person img{
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 50%;
+    background-color: white;
+ }
+ .person{
+    margin-top: 40px;
+    height: 360px;
+    width: 300px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+ }
+ .person h2{
+    font-size: 28px;
+ }
+ .person p{
+    color: gray;
+ }
+ .community p{
+    font-size: 20px;
+ }
+.person i{
+    background-color:white;
+    padding: 8px;
+    margin: 4px;
+    border: 1px solid navy;
+}
+.person i:hover{
+    background-color: navy;
+    color: white;
+}
+footer{
+    background-color: navy;
+    height: 300px;
+    width: 100%;
+    position: relative;
+  
+}
+.footer-head{
+    display: flex;
+    justify-content: space-around;
+    }
+#footer1{
+    width: 200px;
+}    
+#footer1 li{
+    list-style: none;
+    color: lightblue;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+#footer1 h2{
+    color: white;
+    
+}
+#footer2{
+    width: 300px;
+}
+#footer2 h2{
+    color: white;
+}
+#footer2 li{
+    color: lightblue;
+    line-height: 40px;
+    font-size: 16px;
+    list-style: none;
+}
+#footer2 input{
+    height: 35px;
+    width: 180px;
+    background-color:lightblue;
+    color: black;
+    border: none;
+}
+#footer2 button{
+    font-weight: 600;
+    height: 32px;
+    padding: 8px;
+    margin-left: 4px;
+    border: none;
+    background-color: #edea3d;
+    color: navy;
+    cursor: pointer;
+}
+.footer-copyright h2{
+    color: white;
+    
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 33px;
+}
+.footer-copyright span{
+    color: yellow;
+    font-size: 25px;
+}
+.footer-copyright i{
+   position: absolute;
+   right: 150px;
+   color: white;
+   padding: 5px;
+   background-color: gray;
+}
+.active{
+    color: yellow;
+}
+
+</style>
+</head>
+<body>
+    <header>
+       <h1>Study with JP Education</h1>
+<ul>
+<li><a class="active" href="homepage.html">Home</a></li>
+<li><a href="aboutpage.html">About</a></li>
+<li><a href="blogpage.html">Blog</a></li>
+<li><a  href="coursepage.html">Courses</a></li>
+<li><a href="contactpage.html">Contact</a></li>
+<li><button>Join For Free</button></li>
+
+</ul>
+</header>
+
+<div class="form">
+   
+     <section class="box">
+       
+   <div class="close"><i class="fa-solid fa-solid fa-xmark"></i></div>
+   <div class="circle">
+   <!-- <span class="register-head"></span>
+   <span class="register-body"></span> -->
+   </div>
+<div class="container">
+<img src="img_vs_code/code2.jpg" alt="college image">  
+<h1>Enhance Your Carrier With JP Education Center</h1>
+<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam delectus in rem provident numquam? Eius, atque fuga similique ex velit incidunt autem voluptas repellendus sed, perferendis laborum, sunt nam cum!
+Lorem pariatur qui veniam natus atque eaque nemo tempora. Dolor iste amet nemo vitae nobis dicta. </p>  
+<br><center><button class="btn1">Learn More</button>
+<button class="btn2">Visit More</button></center>
+</div>
+<div class="feacture"><br><br>
+   <center> <h2>Awesome Feacuture</h2><br>
+<p>Replenish man have thing gathering lights yielding shall you</p>
+    </center><br><br><br>
+<div class="feacture-main">
+<div class="feacture1">
+    
+<i class="fa-solid fa-light fa-book"></i>
+<h3>Scholarship Facility</h3>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit.m consequatur illo vel ullam. </p>
+
+</div>
+
+<div class="feacture1">
+  
+    <i class="fa-solid fa-light fa-address-card"></i>
+    <h3>Sell Online Courses</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.m consequatur illo vel ullam. </p>
+    
+    </div>
+
+    <div class="feacture1">
+        <i class="fa-solid fa-light fa-award"></i>
+        <h3>Global Certfication</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.m consequatur illo vel ullam. </p>
+        
+        </div></div>
+</div>
+<section id="courselist">
+<center><h1>Our Popular Courses</h1><br>
+<p>Replenish man have thing gathering lights yielding shall you</p></center>
+<div class="courselist-item">
+
+ <div class="list1">
+ <img src="img_vs_code/java.jpg" alt="java image">
+<div class="list1-text">
+  <p>Updated 17/07/2023</p>  
+  <h3>JavaScript Beginners Course</h3>
+  <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+</div>
+<div class="price"><p>$49.99</p></div>
+</div>
+
+<div class="list1">
+ <img src="img_vs_code/html.jpg" alt="java image">
+ <div class="list1-text">
+ <p>Updated 17/07/2023</p>  
+ <h3>HTML & CSS Beginners Course</h3>
+ <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+
+</div>
+<div class="price"><p>$49.99</p></div>
+</div>
+
+<div class="list1">
+ <img src="img_vs_code/css.jpg" alt="java image">
+ <div class="list1-text">
+ <p>Updated 17/07/2023</p>  
+ <h3>CSS Beginners Course</h3>
+ <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(278)</h5>
+</div>
+<div class="price"><p>$49.99</p></div>
+</div>
+<div class="list1">
+    <img src="img_vs_code/webdesign.jpg" alt="java image">
+    <div class="list1-text">
+    <p>Updated 17/07/2023</p>  
+    <h3>Web Design Crash Course</h3>
+    <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+
+   </div>
+   <div class="price"><p>$49.99</p></div>
+</div>
+</div>
+
+<div class="list1">
+    <img src="img_vs_code/webdevelopment.jpg" alt="java image">
+    <div class="list1-text">
+    <p>Updated 17/07/2023</p>  
+    <h3>Web Development Crash  Course</h3>
+    <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+
+   </div>
+   <div class="price"><p>$49.99</p></div>
+</div>
+</div>
+
+<div class="list2">
+    <img src="img_vs_code/ui.png" alt="java image">
+    <div class="list1-text">
+    <p>Updated 17/07/2023</p>  
+    <h3>UI Development Beginners Course</h3>
+    <h5><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-solid fa-light fa-star" style="color: #edea3d;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i><i class="fa-sharp fa-regular fa-star" style="color: #f1ed1e;"></i>(239)</h5>
+
+   </div>
+   <div class="price"><p>$49.99</p></div>
+</div>
+</div>
+
+</div>
+</section>
+<div class="registration">
+    <div class="register-info">
+    <h4>Get 100+ Online Courses for Free</h4><br>
+    <h1>Register to Get it</h1><br>
+    <h2>Limited Time Offer</h2><br>
+<div class="timer">
+<div class="days"></div>
+<div class="hours"></div>
+<div class="mins"></div>
+<div class="sec"></div>
+</div></div>
+<div class="registration-form">
+<form action="active"><br><center>
+<h1>Create Free Account Now</h1></center><br>
+<input type="text" placeholder="     Name" name="name"><br>
+<input type="email" placeholder="     Email Address" name="email"><br>
+<input type="number" placeholder="     Phone Number" name="Phone"><br>
+<input type="submit" value="Visit Course" id="btn1">
+</form>
+</div>
+</div>
+<div class="community"><br><br><br><br>
+<center><h1>Community Experts</h1><br>
+    <p>Replenish man have thing gathering lights yielding shall you</p></center>   
+<div class="community-group">   
+<div class="person">
+<center>    
+<img src="img_vs_code/img.png" alt="person">
+<h2>Jason</h2>
+<p>HTML % CSS Expert</p>
+<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i>
+</center>
+</div>
+
+<div class="person">
+<center>    
+<img src="img_vs_code/img4.png" alt="person">
+<h2>Noah</h2>
+<p>Web Devloper</p>
+<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i>
+</center>
+</div>
+
+<div class="person">
+<center>    
+<img src="img_vs_code/img3.png" alt="person">
+<h2>Nick</h2>
+<p>Web Design Expert</p>
+<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i>
+</center>
+</div>
+<div class="person">
+<center>    
+<img src="img_vs_code/img2.png" alt="person">
+<h2>Jennifer</h2>
+<p>UI Development Expert</p>
+<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i>
+</center>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer-head">
+<div id="footer1"><br><br>
+<ul><h2>Top Products</h2>
+<li>Manager</li>
+<li>Power Tools</li>
+<li>Manager Website</li>
+<li>Marketing Service</li>
+</ul>
+</div>    
+
+<div id="footer1"><br><br>
+    <ul><h2>Quick Links</h2>
+    <li>Jobs</li>
+    <li>Brand Assests</li>
+    <li>Invester Relations</li>
+    <li>Terms of Services</li>
+    </ul>
+    </div>
+
+    <div id="footer1"><br><br>
+<ul><h2>Quick Links</h2>
+<li>Manager Reputaion</li>
+<li>Power Tools</li>
+<li>Managed Website</li>
+<li>Terms of Service</li>
+</ul>
+</div>
+
+<div id="footer1"><br><br>
+<ul><h2>Resources</h2>
+    <li>Guides</li>
+    <li>Reserch</li>
+    <li>Experts</li>
+    <li>Marketing Services</li>
+</ul>
+</div>
+<div id="footer2"><br><br>
+<ul><h2>Newsletter</h2>
+<li>You can trust us , we only send promo offers.</li>
+<li><input type="text" placeholder="   Your Email Addresss"><button>Subscribe</button></li>
+</ul>
+</div>
+</div>
+<div class="footer-copyright">
+<h2>Copyright @2023 All rights reserved | This Template i made by <span>Jyoti Prajapti</span> </h2>
+</div>
+</footer>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 11, 2023 15:37:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.querySelector(".days").innerHTML = days + "days " ;
+      document.querySelector(".hours").innerHTML = hours + "hours " ;
+      document.querySelector(".mins").innerHTML = minutes + "mins " ;
+      document.querySelector(".sec").innerHTML = seconds + "sec " ;
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.querySelector(".timer").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+</body>
+</html>

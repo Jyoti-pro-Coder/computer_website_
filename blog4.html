@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a i{
+    font-weight: 800;
+    color: black;
+    margin-left: 20px;
+    font-size: 35px;
+}
+p{
+    font-size: 23px;
+    line-height: 30px;
+}
+a i:hover{
+    color: gray;
+}
+#blog-frontweb{
+    width: 80%;
+    height: 100vh;
+    margin-left: 180px;
+    position: relative;
+    
+}
+ #blog-frontweb #img1{
+    height: 70%;
+    background-size: contain;
+    width: 97%;
+    border-radius: 25px;
+}
+#blog-frontweb h3{
+    font-size: 45px;
+}
+h4{
+    font-size: 30px;
+}
+.div1{
+    padding: 10px 25px;
+    background-color: bisque;
+    width: 65%;
+    box-shadow: 1px 2px 13px goldenrod;
+}
+.div2{
+    background-color: navy;
+    color:white;
+    padding: 10px 22px;
+}
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container{
+    padding: 10px 20px;
+    position: relative;
+    width: 40%;
+    height: 200px;
+    border-radius: 25px;
+    background-color: navy;
+}
+.text-box{
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    height: 160px;
+    border-radius: 25px;
+}
+.text-box h4{
+    margin-top: -10px;
+}
+.text-box p{
+    margin-top: -20px;
+}
+.left-container{left: 0px;}
+.right-container{
+    left: 50%;
+}
+.container img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: -64px;
+    top: 32px;
+    z-index: 10;
+}
+/* .left-container img{
+    left:400px;
+} */
+.right-container img{
+    left: -60px;
+}
+.timeline::after{
+content: ' ';
+position: absolute;
+width: 6px;
+height: 100%;
+background-color: black;
+top: 70px;
+left: 47%;
+margin-left: -3px;
+z-index: -1;
+animation: moveline  16s linear forwards;
+
+}
+@keyframes moveline{
+    0%{height: 0;}
+    100%{height: 100%;}
+}
+.left-con-arrow{
+    height: 0px;
+width: 0px;
+position: absolute;
+top: 28px;
+z-index: 1;
+border-top: 15px solid transparent;
+border-bottom:  15px solid transparent;
+border-left: 15px solid navy;
+right: -33px;
+}
+.right-con-arrow{
+    height: 0px;
+width: 0px;
+position: absolute;
+top: 28px;
+z-index: 1;
+border-top: 15px solid transparent;
+border-bottom:  15px solid transparent;
+border-right: 15px solid navy;
+left: -35px;
+}
+    </style>
+</head>
+<body>
+    <br>
+    <a href="blogpage.html"><i class="fa-solid fa-light fa-arrow-left"></i></a> 
+    <section id="blog-frontweb">
+        <img src="img_vs_code/code4.jpg" alt="coding image" id="img1">
+        <h3>Learn Frontend Web  in The Easiest Way</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas eum voluptate corrupti distinctio enim autem repudiandae dolorum cum esse dolorem in maxime id, quia nobis iure sint deleniti nesciunt.</p>
+    <p>A front-end developer creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app. When you visit a website, the design elements you see were created by a front-end developer.</p>
+ 
+<br>
+<div class="div2">
+    <h4>What is a Front End Developer—How to become one?</h4>
+    <p>One of the highest-earning professionals in this world are web developers, who use their knowledge and skills to build attractive and user-friendly websites. This blog is designed for those who want to learn about this domain and profession and pursue a front end developer career. Fast track your career and become a certified developer by gaining insights through this blog.</p>
+</div>
+
+
+<br><div class="timeline">
+    <center><h3>Frontend Web Development languages</h3></center>
+        <div class="container left-container">
+        <img src="img_vs_code/html.png" alt="" height="10px" width="10px">
+<div class="text-box">
+    <h4>HTML</h4>
+    <p> Lorem consequatur temporibus nihil blanditiis, incidunt, error molestias quaerat eius voluptatum eveniet enim animi fugiat quis velit nobis delectus excepturi quos?</p>
+<span class="left-con-arrow">
+
+</span>
+</div></div>
+
+<div class="container right-container">
+    <img src="img_vs_code/css.png" alt="">
+    <div class="text-box">
+        <h4>CSS</h4>
+        <p> Lorem consequatur temporibus nihil blanditiis, incidunt, error molestias quaerat eius voluptatum eveniet enim animi fugiat quis velit nobis delectus excepturi quos?</p>
+        <span class="right-con-arrow">
+
+        </span>
+    </div></div>
+
+    <div class="container left-container">
+        <img src="img_vs_code/js.png" alt="">
+        <div class="text-box">
+            <h4>JavaScript</h4>
+            <p> Lorem consequatur temporibus nihil blanditiis, incidunt, error molestias quaerat eius voluptatum eveniet enim animi fugiat quis velit nobis delectus excepturi quos?</p>
+            <span class="left-con-arrow">
+
+            </span>
+        </div></div>
+
+        <div class="container right-container">
+            <img src="img_vs_code/react.png" alt="">
+            <div class="text-box">
+                <h4>React</h4>
+                <p> Lorem consequatur temporibus nihil blanditiis, incidunt, error molestias quaerat eius voluptatum eveniet enim animi fugiat quis velit nobis delectus excepturi quos?</p>
+                <span class="right-con-arrow">
+
+                </span>
+            </div></div>
+
+            <div class="container left-container">
+                <img src="img_vs_code/vue.png" alt="">
+                <div class="text-box">
+                    <h4>Vue</h4>
+                    <p> Lorem consequatur temporibus nihil blanditiis, incidunt, error molestias quaerat eius voluptatum eveniet enim animi fugiat quis velit nobis delectus excepturi quos?</p>
+                    <span class="left-con-arrow">
+
+                    </span>
+                </div></div>
+
+                <div class="container right-container">
+                    <img src="img_vs_code/css.png" alt="">
+                    <div class="text-box">
+                        <h4>Angular</h4>
+                        <p> Lorem consequatur temporibus nihil blanditiis, incidunt, error molestias quaerat eius voluptatum eveniet enim animi fugiat quis velit nobis delectus excepturi quos?</p>
+                        <span class="right-con-arrow">
+
+                        </span>
+                    </div></div>
+                    <div class="container left-container">
+                        <img src="img_vs_code/jquery.png" alt="">
+                        <div class="text-box">
+                            <h4>Jquery</h4>
+                            <p> Lorem consequatur temporibus nihil blanditiis, incidunt, error molestias quaerat eius voluptatum eveniet enim animi fugiat quis velit nobis delectus excepturi quos?</p>
+                            <span class="left-con-arrow">
+
+                            </span>
+                        </div></div>
+                        <div class="container right-container">
+                            <img src="img_vs_code/swift.png" alt="">
+                            <div class="text-box">
+                                <h4>Swift</h4>
+                                <p> Lorem consequatur temporibus nihil blanditiis, incidunt, error molestias quaerat eius voluptatum eveniet enim animi fugiat quis velit nobis delectus excepturi quos?</p>
+                                <span class="right-con-arrow">
+
+                                </span>
+                            </div></div>
+
+</div>  
+<center><div class="div1">
+    <p>What's the difference between a front-end developer and a back-end developer? Back-end developers work to develop the behind-the-scenes portions of a website or application, like data storage, security, site performance, or other server-side functions.</p>
+</center></div><br>
+<h3>FAQs</h3>
+<h4>1. Use of Frontend Web Development?</h4>
+<p>The three most common types of web design are static web design, dynamic web design, and eCommerce web design.</p>
+
+<h4>2. Is Frontend Web a good career choice?</h4>
+<p>As businesses transition to online stores and thousands of websites are being developed for organizations to have an active online presence, well-designed websites are a necessity. Therefore, keeping this high demand for professional web designers in mind, web designing is a good career choice.</p>
+
+<h4>3. Is Frontend Web hard to study?</h4>
+<p>Becoming a web designer involves developing various technical skills and knowledge. However, if web designing interests you and you’re motivated to pursue web designing as a career, web design is not very hard to study.</p>
+
+</section>
+</body>
+</html>

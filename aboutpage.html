@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/brands.min.css" integrity="sha512-3BTr+iUuxM3Z4P63cndpLNAIj4MjOQlWU67+g60wxnxBW1E6r/BZYOZdFXxdHY2OCFX2sG1hnFAuMQnyBnHR6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/brands.min.css" integrity="sha512-3BTr+iUuxM3Z4P63cndpLNAIj4MjOQlWU67+g60wxnxBW1E6r/BZYOZdFXxdHY2OCFX2sG1hnFAuMQnyBnHR6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+header{
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: right;
+        padding: 15px 200px;
+        transition: 0.5s ease;
+        position: fixed;
+        box-shadow: 5px 5px 12px black;
+        background-color: white;
+}
+header ul{
+display: flex;
+margin-left: 540px;
+
+}
+header ul li{
+padding-left: 13px;
+list-style: none;
+margin: 10px;
+cursor: pointer;
+}
+header h1{
+    font-size: 24px;
+    margin-top: 7px;
+    margin-left: -100px;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+header button{
+    padding: 5px 9px;
+    font-size: 16px;
+    background-color: white;
+    color:purple;
+    border:2px solid black;
+    cursor: pointer;
+}
+.about{
+    margin-top: 110px;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+.about h1{
+    font-size: 60px;
+}
+.about .about-img1{
+    position: absolute;
+    left: 60px;
+    top: 120px;
+    width: 360px;
+    box-shadow: 1px 2px 13px black;
+}
+.about .about-img2{
+    height: 500px;
+    width: 340px;
+    position: absolute;
+    left: 460px;
+    box-shadow: 1px 2px 13px black;
+}
+.about .about-img3{
+    position: absolute;
+top: 380px;
+left: 220px;
+box-shadow: 1px 2px 13px black;
+height: 200px;
+width: 200px;}
+.about-text{
+    margin-top: 50px;
+    position:absolute;
+    right:120px;
+    width: 500px;
+    height: 500px;
+}
+.about-text p{
+    color: gray;
+    line-height: 27px
+}
+.about-img4{
+    height: 80px;
+    width: 80px;
+}
+.about-img5{
+    height: 80px;
+    width: 80px;
+}
+.about-text h3{
+    position: absolute;
+    top: 250px;
+    font-size: 24px;
+    left: 140px;
+}
+.about-text h4{
+    position: absolute;
+    top: 370px;
+    font-size: 24px;
+    left: 140px;
+}
+.about-text .text2{
+    margin-top: -50px;
+    margin-left: 100px;
+}
+.about-text .text3{
+    margin-top: -35px;
+    margin-left: 100px;
+}
+.active{
+    color: yellow;
+}
+.parallax {
+  /* The image used */
+
+background-image: url("img_vs_code/code2.jpg");
+  /* Set a specific height */
+  min-height: 600px; 
+color: white;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax h1{
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-size: 90px;
+    margin-top: 20%;
+}
+.parallax h2{
+    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-size: 90px;
+
+}
+
+.card{
+    margin-top: 29px;
+    background-color:white;
+    height: 300px;
+    border: 2px solid black;
+}div p{
+    font-size: 20px;
+    word-spacing: 4px;
+    line-height: 30px;
+    
+}
+div{
+    padding: 20px 40px;
+}
+footer{
+    background-color: navy;
+    height: 340px;
+    width: 100%;
+    position: relative;
+  
+}
+.footer-head{
+    display: flex;
+    justify-content: space-around;
+    }
+#footer1{
+    width: 200px;
+}    
+#footer1 li{
+    list-style: none;
+    color: lightblue;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+#footer1 h2{
+    color: white;
+    
+}
+#footer2{
+    width: 300px;
+}
+#footer2 h2{
+    color: white;
+}
+#footer2 li{
+    color: lightblue;
+    line-height: 40px;
+    font-size: 16px;
+    list-style: none;
+}
+#footer2 input{
+    height: 35px;
+    width: 180px;
+    background-color:lightblue;
+    color: black;
+    border: none;
+}
+#footer2 button{
+    font-weight: 600;
+    height: 32px;
+    padding: 8px;
+    margin-left: 4px;
+    border: none;
+    background-color: #edea3d;
+    color: navy;
+    cursor: pointer;
+}
+.footer-copyright h2{
+    color:white;
+    
+    justify-content: space-around;
+    margin-top: -40px;
+    font-size: 20px;
+    margin-left: 33px;
+}
+.footer-copyright span{
+    color: yellow;
+    font-size: 25px;
+}
+.footer-copyright i{
+   position: absolute;
+   right: 150px;
+   color: white;
+   padding: 5px;
+   background-color: gray;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Study with JP Education</h1>
+ <ul>
+ <li><a href="homepage.html">Home</a></li>
+ <li><a class="active" href="aboutpage.html">About</a></li>
+ <li><a href="blogpage.html">Blog</a></li>
+ <li><a href="coursepage.html">Courses</a></li>
+ <li><a href="contactpage.html">Contact</a></li>
+ <li><button>Join For Free</button></li>
+ </ul>
+ </header> 
+ <div class="about">
+<center><h1>About Us</h1></center>
+<img src="img_vs_code/computer2.jpg" alt="Image of People" class="about-img1">
+<img src="img_vs_code/computer1.jpg" alt="Image of People" class="about-img2">
+<img src="img_vs_code/computer3.jpg" alt="Image of People" class="about-img3">
+<div class="about-text">
+<h2>Welcome to JP Education , Enhance your skills with best Online Courses</h2><br>
+<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis reiciendis ullam tenetur dicta adipisci enim neque voluptate, voluptatum ab, suscipit consequuntur incidunt mollitia magnam hic? Distinctio quisquam possimus laboriosam iusto!</p>
+<br><img src="img_vs_code/com.png" alt="png desktop image" class="about-img4"><h3>400+ Courses</h3>
+<p class="text2">You can start and finish one of these popular coursers in under our site</p>
+<br><img src="img_vs_code/balck3.png.png" alt="" class="about-img5">
+<h4>Lifetime Access</h4>
+<p class="text3">You can start and finish one of these popular coursers in under our site</p>
+</div> 
+</div>
+<div class="parallax">
+
+    <marquee behavior="alternate"><h1>Teach By Expert * Get 100% Result</h1></marquee>
+
+</div>
+
+<div style="height:450px;background-color:white;font-size:36px">
+    <h4>About us</h4>
+<p> Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet atque nulla voluptas vel maiores, velit dolores iste dolore quae cumque quod tenetur autem exercitationem ut incidunt, odio aut quaerat!br <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores porro eius quis iusto eaque laudantium, recusandae fugit optio, voluptatem minus, molestias corporis animi corrupti nulla iste consequuntur veniam. Quam.
+     Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa perspiciatis quo et, corporis inventore maxime odio unde modi sapiente recusandae reprehenderit possimus. Quos vel, qui expedita ut cum nam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima dolorem tempora incidunt qui laudantium laborum iste, quia ratione deserunt quam alias impedit quo nobis fugit magni dolorum facere aperiam? sit amet consectetur adipisicing elit. Ratione quasi sint facere accusantium quo odit atque dolore repellendus? Facere adipisci magni voluptates assumenda. Porro cum commodi fuga ullam deleniti assumenda.lomre Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam ut rerum fuga dolores culpa, delectus est provident distinctio maxime optio qui, nobis eveniet, sit laboriosam sequi itaque. Reiciendis, consequuntur. sit amet consectetur, adipisicing elit. Laudantium porro dolores, beatae eius atque eos, possimus iure repudiandae ratione molestias blanditiis qui, enim consequatur? Voluptatibus natus error sequi aspernatur enim?</p>
+
+
+</div>
+<footer>
+    <div class="footer-head">
+    <div id="footer1"><br><br>
+    <ul><h2>Top Products</h2>
+    <li>Manager</li>
+    <li>Power Tools</li>
+    <li>Manager Website</li>
+    <li>Marketing Service</li>
+    </ul>
+    </div>    
+    
+    <div id="footer1"><br><br>
+        <ul><h2>Quick Links</h2>
+        <li>Jobs</li>
+        <li>Brand Assests</li>
+        <li>Invester Relations</li>
+        <li>Terms of Services</li>
+        </ul>
+        </div>
+    
+        <div id="footer1"><br><br>
+    <ul><h2>Quick Links</h2>
+    <li>Manager Reputaion</li>
+    <li>Power Tools</li>
+    <li>Managed Website</li>
+    <li>Terms of Service</li>
+    </ul>
+    </div>
+    
+    <div id="footer1"><br><br>
+    <ul><h2>Resources</h2>
+        <li>Guides</li>
+        <li>Reserch</li>
+        <li>Experts</li>
+        <li>Marketing Services</li>
+    </ul>
+    </div>
+    <div id="footer2"><br><br>
+    <ul><h2>Newsletter</h2>
+    <li>You can trust us , we only send promo offers.</li>
+    <li><input type="text" placeholder="   Your Email Addresss"><button>Subscribe</button></li>
+    </ul>
+    </div>
+    </div>
+    <div class="footer-copyright">
+    <h2>Copyright @2023 All rights reserved | This Template i made by <span>Jyoti Prajapti</span> </h2>
+    </div>
+    </footer>
+</body>
+</html>

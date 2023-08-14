@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/brands.min.css" integrity="sha512-3BTr+iUuxM3Z4P63cndpLNAIj4MjOQlWU67+g60wxnxBW1E6r/BZYOZdFXxdHY2OCFX2sG1hnFAuMQnyBnHR6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/brands.min.css" integrity="sha512-3BTr+iUuxM3Z4P63cndpLNAIj4MjOQlWU67+g60wxnxBW1E6r/BZYOZdFXxdHY2OCFX2sG1hnFAuMQnyBnHR6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+header{
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: right;
+        padding: 15px 200px;
+        transition: 0.5s ease;
+        position: fixed;
+        box-shadow: 5px 5px 12px black;
+        background-color: white;
+}
+header ul{
+display: flex;
+margin-left: 540px;
+
+}
+header ul li{
+padding-left: 13px;
+list-style: none;
+margin: 10px;
+cursor: pointer;
+}
+header h1{
+    font-size: 24px;
+    margin-top: 7px;
+    margin-left: -100px;
+}
+ header a{
+    color: black;
+    text-decoration: none;
+}
+header button{
+    padding: 5px 9px;
+    font-size: 16px;
+    background-color: white;
+    color:purple;
+    border:2px solid black;
+    cursor: pointer;
+}
+
+#blog_webdevelopment img{
+    margin-top: 100px;
+    height: 60%;
+    background-size: contain;
+    width: 80%;
+    border-radius: 25px;
+}
+#blog_webdesign img{
+    margin-top: 90px;
+    height: 60%;
+    background-size: contain;
+    width: 80%;
+    border-radius: 25px;
+
+}
+#blog-appdevelopment img{
+    margin-top: 94px;
+    height: 60%;
+    background-size: contain;
+    width: 80%;
+    border-radius: 25px;
+
+}
+#blog-frontweb img{
+    margin-top: 100px;
+    height: 60%;
+    background-size: contain;
+    width: 80%;
+    border-radius: 25px;
+
+}
+#blog-python img{
+    margin-top: 100px;
+    height: 60%;
+    background-size: contain;
+    width: 80%;
+    border-radius: 25px;
+
+}
+#blog-java img{
+    margin-top: 100px;
+    height: 60%;
+    background-size: contain;
+    width: 80%;
+    border-radius: 25px;
+
+}
+#blog_webdevelopment{
+    width: 50%;
+    height: 100vh;
+    margin-left: 30px;
+    
+}
+#blog_webdesign{
+    width: 50%;
+    height: 100vh;
+    margin-left: 30px;
+    
+}
+#blog-appdevelopment{
+    width: 50%;
+    height: 100vh;
+    margin-left: 30px;
+    
+}
+
+#blog-frontweb{
+    width: 50%;
+    height: 100vh;
+    margin-left: 30px;
+    
+}
+#blog-python{
+    width: 50%;
+    height: 100vh;
+    margin-left: 30px;
+    
+}
+#blog-java{
+    width: 50%;
+    height: 100vh;
+    margin-left: 30px;
+    
+}
+#blog_webdevelopment  h3{
+       font-size: 30px;
+    width: 93%;
+}
+#blog_webdevelopment  p{
+        line-height: 30px;
+    font-size: 18px;
+    width: 80%;
+}
+#blog_webdesign  h3{
+       font-size: 30px;
+    width: 93%;
+}
+#blog_webdesign  p{
+        line-height: 30px;
+    font-size: 18px;
+    width: 80%;
+}
+#blog-appdevelopment  h3{
+       font-size: 30px;
+    width: 93%;
+}
+#blog-appdevelopment  p{
+        line-height: 30px;
+    font-size: 18px;
+    width: 80%;
+}
+#blog-frontweb  h3{
+       font-size: 30px;
+    width: 93%;
+}
+#blog-frontweb  p{
+        line-height: 30px;
+    font-size: 18px;
+    width: 80%;
+}
+#blog-python h3{
+       font-size: 30px;
+    width: 93%;
+}
+#blog-python  p{
+        line-height: 30px;
+    font-size: 18px;
+    width: 80%;
+}
+#blog-java  h3{
+       font-size: 30px;
+    width: 93%;
+}
+#blog-java  p{
+        line-height: 30px;
+    font-size: 18px;
+    width: 80%;
+}
+.btn1 , .btn2 , .btn3 , .btn4 , .btn5 , .btn6{
+    padding: 8px  12px;
+    font-size: 17px;
+    background-color: navy;
+    color: white;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+.cate h1{
+    border-bottom: 1px solid black;
+    width: 500px;
+    line-height: 50px;
+    font-size: 40px;
+}
+.cate{
+    position: fixed;
+    right: 90px;
+    height: 50%;
+    top: 130px;
+    width: 500px;
+   
+   
+}
+ .cate a{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+
+} 
+.cate a:hover{
+    color: gray;
+
+}
+.cate p{
+    border-bottom: 1px solid black;
+    width: 500px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.active{
+    color: yellow;
+}
+footer{
+    background-color: navy;
+    height: 300px;
+    width: 100%;
+    bottom: 10px;  position: relative;
+  
+}
+.footer-head{
+    display: flex;
+    justify-content: space-around;
+    }
+#footer1{
+    position: relative;
+    width: 200px;
+}    
+#footer1 li{
+    list-style: none;
+    color: lightblue;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+#footer1 h2{
+    color: white;
+    
+}
+#footer2{
+    width: 300px;
+}
+#footer2 h2{
+    color: white;
+}
+#footer2 li{
+    color: lightblue;
+    line-height: 40px;
+    font-size: 16px;
+    list-style: none;
+}
+#footer2 input{
+    height: 35px;
+    width: 180px;
+    background-color:lightblue;
+    color: black;
+    border: none;
+}
+#footer2 button{
+    font-weight: 600;
+    height: 32px;
+    padding: 8px;
+    margin-left: 4px;
+    border: none;
+    background-color: #edea3d;
+    color: navy;
+    cursor: pointer;
+}
+.footer-copyright h2{
+    color: white;
+    
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 33px;
+}
+.footer-copyright span{
+    color: yellow;
+    font-size: 25px;
+}
+.footer-copyright i{
+   position: absolute;
+   right: 150px;
+   color: white;
+   padding: 5px;
+   background-color: gray;
+}
+</style></head>
+<body>
+    <header>
+        <h1>Study with JP Education</h1>
+ <ul>
+ <li><a href="homepage.html">Home</a></li>
+ <li><a href="aboutpage.html">About</a></li>
+ <li><a class="active" href="blogpage.html">Blog</a></li>
+ <li><a href="coursepage.html">Courses</a></li>
+ <li><a href="contactpage.html">Contact</a></li>
+ <li><button>Join For Free</button></li>
+ </ul>
+ </header>
+ <div class="cate">
+    <h1>Catergories</h1>
+    <p><a href="#blog_webdevelopment">Web Development</a></p>
+    <p><a href="#blog_webdesign">Web Design</a></p>
+    <p><a href="#blog-appdevelopment">App Development</a></p>
+    <p><a href="#blog-frontweb">Frontend Web</a></p>
+    <p><a href="#blog-python">Python Programming</a></p>
+    <p><a href="#blog-java">JavaScript Hacks</a></p>
+</div>
+
+<section id="blog_webdevelopment">
+    <img src="img_vs_code/code2.jpg" alt="coding image">
+    <h3>Learn Web Development in The Easiest Way</h3>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas eum voluptate corrupti distinctio enim autem repudiandae dolorum cum esse dolorem in maxime id, quia nobis iure sint deleniti nesciunt.</p>
+<button class="btn1"><a href="blog1.html">Read More</a></button>
+</section>
+
+<section id="blog_webdesign">
+    <img src="img_vs_code/code1.jpg" alt="coding image">
+    <h3>Learn Web Design in The Easiest Way</h3>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas eum voluptate corrupti distinctio enim autem repudiandae dolorum cum esse dolorem in maxime id, quia nobis iure sint deleniti nesciunt.</p>
+<button class="btn2"><a href="blog2.html">Read More</a></button>
+</section>
+
+<section id="blog-appdevelopment">
+    <img src="img_vs_code/code6.jpg" alt="coding image">
+    <h3>Learn App Development in The Easiest Way</h3>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas eum voluptate corrupti distinctio enim autem repudiandae dolorum cum esse dolorem in maxime id, quia nobis iure sint deleniti nesciunt.</p>
+<button class="btn3"><a href="blog3.html">Read More</a></button>
+</section>
+
+<section id="blog-frontweb">
+    <img src="img_vs_code/code4.jpg" alt="coding image">
+    <h3>Learn Frontend Web  in The Easiest Way</h3>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas eum voluptate corrupti distinctio enim autem repudiandae dolorum cum esse dolorem in maxime id, quia nobis iure sint deleniti nesciunt.</p>
+<button class="btn4"><a href="blog4.html">Read More</a></button>
+</section>
+
+<section id="blog-python">
+    <img src="img_vs_code/code3.jpg" alt="coding image">
+    <h3>Learn Python in The Easiest Way</h3>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas eum voluptate corrupti distinctio enim autem repudiandae dolorum cum esse dolorem in maxime id, quia nobis iure sint deleniti nesciunt.</p>
+<button class="btn5"><a href="blog5.html">Read More</a></button>
+</section>
+
+<section id="blog-java">
+    <img src="img_vs_code/code5.jpg" alt="coding image">
+    <h3>Learn JavaScript in The Easiest Way</h3>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas eum voluptate corrupti distinctio enim autem repudiandae dolorum cum esse dolorem in maxime id, quia nobis iure sint deleniti nesciunt.</p>
+<button class="btn6"><a href="blog6.html">Read More</a></button>
+</section>
+ </div>  
+ <br>
+ <footer>
+    <div class="footer-head">
+    <div id="footer1"><br><br>
+    <ul><h2>Top Products</h2>
+    <li>Manager</li>
+    <li>Power Tools</li>
+    <li>Manager Website</li>
+    <li>Marketing Service</li>
+    </ul>
+    </div>    
+    
+    <div id="footer1"><br><br>
+        <ul><h2>Quick Links</h2>
+        <li>Jobs</li>
+        <li>Brand Assests</li>
+        <li>Invester Relations</li>
+        <li>Terms of Services</li>
+        </ul>
+        </div>
+    
+        <div id="footer1"><br><br>
+    <ul><h2>Quick Links</h2>
+    <li>Manager Reputaion</li>
+    <li>Power Tools</li>
+    <li>Managed Website</li>
+    <li>Terms of Service</li>
+    </ul>
+    </div>
+    
+    <div id="footer1"><br><br>
+    <ul><h2>Resources</h2>
+        <li>Guides</li>
+        <li>Reserch</li>
+        <li>Experts</li>
+        <li>Marketing Services</li>
+    </ul>
+    </div>
+    <div id="footer2"><br><br>
+    <ul><h2>Newsletter</h2>
+    <li>You can trust us , we only send promo offers.</li>
+    <li><input type="text" placeholder="   Your Email Addresss"><button>Subscribe</button></li>
+    </ul>
+    </div>
+    </div>
+    <div class="footer-copyright">
+    <h2>Copyright @2023 All rights reserved | This Template i made by <span>Jyoti Prajapti</span> </h2>
+    </div>
+    </footer>
+    
+    
+   
+</body>
+</html>
